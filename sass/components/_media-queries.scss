@@ -1,0 +1,138 @@
+@media only screen and (max-width: 968px) {
+    .project-tile{
+        width: 49%;
+    }
+
+    .contact-wrapper{
+        height: auto;
+    }
+    .contact-grid{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-form{
+        width: 80%;
+    }
+    .contact-info{
+        width: 100%;
+        margin-top: 70px;
+        .info{
+            width: 90%;
+            padding-left: 0;
+            justify-content: space-between;
+        }
+    }
+    #map{
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .nav-logo{
+        width: 200px;
+        margin-left: 15px;
+        span{
+            font-size: 25px;
+        }
+        img{
+            width: 60px;
+            height: auto;
+        }
+    }
+
+    .scrolled-nav{
+        .nav-logo{
+            margin: 5px 0 0 10px;
+        }
+    }
+
+    .nav-links{
+        display: none;
+    }
+    .mobile-icon{
+        display: flex;
+    }
+    .mobile-navigation{
+        display: block;
+    }
+    .mobile-background{
+        display: block;
+    }
+    #home{
+        height: 650px;
+    }
+    .home-text{
+        font-size: 70px;
+    }
+
+    .services-grid{
+        div{
+            width: 49%;
+        }
+    }
+
+    .project-tile{
+        width: 100%;
+    }
+    .project-wrapper{
+        padding-bottom: 100px;
+    }
+    .project-tile:hover .tile-hover{
+        transform: translateY(102%);
+    }
+
+    .contact-form{
+        width: 90%;
+    }
+    .contact-info{
+        .info{
+            flex-direction: column;
+        }
+    }
+
+    .footer-wrapper{
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 0 40px 0;
+    }
+    .footer-nav{
+        a{
+            font-size: 14px;
+        }
+    }
+}
+
+
+@media only screen and (max-width: 568px) {
+    .services-grid{
+        div{
+            width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 468px) {
+    .home-text{
+        font-size: 65px;
+        padding: 0 20px;
+    }
+    .tile-desc{
+        padding-top: 5%;
+        h3{
+            font-size: 20px;
+        }
+        a{
+            color: $def-color;
+            font-weight: 300;
+        }
+        p{
+            font-size: 16px;
+        }
+        .close{
+            top: 20px;
+        }
+    }
+}

@@ -1,0 +1,98 @@
+#project{
+    background-color: rgb(247, 247, 247);
+    width: 100%;
+}
+.project-wrapper{
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 50px 0 220px 0;
+    box-sizing: border-box;
+}
+.project-grid{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.project-tile{
+    position: relative;
+    width: 32%;
+    margin-top: 20px;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    border-radius: 2px;
+    overflow: hidden;
+    cursor: pointer;
+    img{
+        display: block;
+        max-width: 115%;
+        height: auto;
+    }
+}
+.tile-hover{
+    position: absolute;
+    bottom:0;
+    left: 0;
+    width: 100%;
+    height: 130px;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    cursor: default;
+    transform: translateY(102%);
+    transition: all ease 0.15s;
+    a{
+        width:auto;
+        color: $darker;
+        font-weight: 300;
+        font-size: 25px;
+        margin: 20px 0 5px 10px;
+    }
+    span{
+        color: $def-color;
+        font-weight: 300;
+        margin-left:10px;
+    }
+    .fa{
+        width: 20px;
+        text-align: center;
+        color: $darker !important;
+        font-size: 20px !important;
+        position: absolute;
+        right: 30px;
+        top: 20px;
+        cursor: pointer;
+    }
+}
+.project-tile:hover .tile-hover{
+    transform: translateY(0);
+}
+.tile-desc{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding: 10% 20px;
+    background: white;
+    color: $darker;
+    box-sizing:border-box;
+    cursor: default;
+    transform: translateY(102%);
+    transition: all cubic-bezier(0.47, 0, 0.75, 0.72) 0.20s;
+    h3{
+        margin-top: 7px;
+        font-size: 23px;
+    }
+    a{
+        color: $def-color;
+        font-weight: 300;
+    }
+    p{
+        font-size: 19px;
+        font-weight: 300;
+        line-height: 1.5;
+    }
+}
+.tile-open{
+    transform: translateY(0);
+}

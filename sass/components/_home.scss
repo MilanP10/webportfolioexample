@@ -1,0 +1,28 @@
+#home{
+    background:url("../img/home-background1.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 750px;
+    //display: flex;
+    align-items: center;
+    justify-content: center;
+    background-attachment: fixed;
+    text-align: center;
+    overflow: hidden;
+}
+.home-text{
+    margin-top: 30vh;
+    padding:0 50px;
+    font-size: 90px;
+    color: #EEE;
+    overflow: hidden;
+}
+.changing-word{
+    font-weight: 400;
+    color: #EEE;
+}
+.end-text{
+    color: $def-color !important;
+    background-color: #FFF;
+}
