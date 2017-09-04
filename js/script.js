@@ -134,7 +134,7 @@ $(document).ready(function(){
 
         function openMobile(e){
             e.preventDefault();
-            $mobileNav.css("transform","translateX(-70%)");
+            $mobileNav.css("transform", "translateX(-70%)");
             $mobileBackground.css({"height":"100%", "opacity":"0.6"});
         }
         function closeMobile(){
