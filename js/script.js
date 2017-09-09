@@ -122,7 +122,7 @@ $(document).ready(function(){
 //---MOBILE NAVIGATION--
     (function(){
         var $mobileIcon = $(".mobile-icon");
-        var $mobileNav = $(".sections");
+        var $mobileNav = $(".mobile-navigation");
         var $mobileLinks = $(".mobile-navigation a");
         var $mobileBackground = $(".mobile-background");
         var $mobileClose = $(".mobile-navigation .close");
@@ -134,11 +134,11 @@ $(document).ready(function(){
 
         function openMobile(e){
             e.preventDefault();
-            $mobileNav.css("transform", "translateX(-70%)");
+            $mobileNav.css("transform", "translateX(0)");
             $mobileBackground.css({"height":"100%", "opacity":"0.6"});
         }
         function closeMobile(){
-            $mobileNav.css("transform","translateX(0)");
+            $mobileNav.css("transform","translateX(102%)");
             $mobileBackground.css("opacity", "0");
             setTimeout(function(){
                 $mobileBackground.css("height", "0");
